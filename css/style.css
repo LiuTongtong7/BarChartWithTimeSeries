@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'NeoTech';
+    src : url('../fonts/NeoTech.otf');
+}
+@font-face{
+    font-family: 'NeoTech';
+    src : url('../fonts/NeoTech-Medium.otf');
+    font-weight: bold;
+}
+
+/* Axis */
+
+.axis {
+    z-index: 10000;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+.axis line {
+    display: none;
+}
+.x.axis path {
+    display: none;
+}
+
+.axis text {
+    fill: #000;
+    font-family: NeoTech, sans-serif;
+}
+.y.axis text {
+    font-size: 18px;
+    font-weight: bold;
+}
+.x.axis text {
+    font-size: 16px;
+}
+
+/* Gridline */
+
+.grid line {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+    stroke-width: 0;
+}
+
+/* Chart Text */
+
+text.label {
+    font: 12px NeoTech, sans-serif;
+}
+text.label.inner {
+    fill: #fff;
+    text-anchor: end;
+}
+text.label.outer {
+    fill: #000;
+    text-anchor: start;
+    font-weight: bold;
+}
+
+text.notation {
+    fill: #000;
+    font: 60px NeoTech, sans-serif;
+    text-anchor: end;
+}
